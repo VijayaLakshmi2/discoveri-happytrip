@@ -23,7 +23,7 @@ pipeline {
 			input{
 				message "Do you want to proceed for Production Deployment?"
 			}
-			Steps{
+			steps{
 				sh 'echo "Deploy into Prod"'
 			}
 		}
