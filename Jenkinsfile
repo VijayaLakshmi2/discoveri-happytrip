@@ -32,7 +32,7 @@ pipeline {
 		stage('Deploy') {
 			steps{
 				echo 'deployed'
-				deploy adapters: [Tomcat7(credentialsId: 'e0cdb588-e5bc-45d6-9bfb-0c0dfae96362', url: 'http://localhost:8085')], contextPath: 'happytrip', war: '**/*.war'
+				deploy adapters: [Tomcat 7.x(credentialsId: 'e0cdb588-e5bc-45d6-9bfb-0c0dfae96362', url: 'http://localhost:8085')], contextPath: 'happytrip', war: '**/*.war'
 			}
 		}
 	}
