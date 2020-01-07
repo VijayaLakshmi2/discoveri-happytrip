@@ -28,11 +28,7 @@ pipeline {
 				sh 'echo "Deploy into Prod"'
 			}
 		}
-    		stage('test') {
-            		steps{
-                		powershell(script:'Write-Output Hello')
-            		}
-        	}
+    		
 		stage('Deploy') {
 			steps{
 				echo 'deployed'
